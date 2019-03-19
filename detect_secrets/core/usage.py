@@ -290,6 +290,11 @@ class PluginOptions(object):
             disable_flag_text='--no-slack-scan',
             disable_help_text='Disables scanning for Slack tokens.',
         ),
+        PluginDescriptor(
+            classname='ContentfulDetector',
+            disable_flag_text='--no-contentful-scan',
+            disable_help_text='Disables scanning for Contentful tokens.',
+        ),
     ]
 
     def __init__(self, parser):
